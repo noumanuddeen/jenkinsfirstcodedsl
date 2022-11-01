@@ -1,0 +1,46 @@
+===========
+my first sample code pipeline for jenkins dsl 
+============
+
+pipeline
+{
+    agent any
+    stages
+    {
+        
+        stage('plan')
+        {steps
+        {print"plan at this stages"}
+        }
+        
+        
+        
+        stage('code')
+        {
+            steps{print"coding now"}
+        }
+        
+        
+        stage('build')
+        {
+            steps{print"building has staerted"}
+                
+            
+        }
+        
+          stage('test')
+        {
+            steps { print "testing phase" }
+            
+        }
+        
+          stage("release")
+        {
+            steps{print"releasing the product"}
+        }
+        
+    }
+}
+
+        
+        
